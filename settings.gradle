@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Sprint8"
+rootProject.name = "sprint-8"
 include ':app'
