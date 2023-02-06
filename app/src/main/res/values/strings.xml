@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Sprint8</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel est ac nisl semper interdum. Praesent vitae aliquam enim. Mauris et tempus urna, ac pharetra leo. Nulla facilisi. Nam imperdiet magna vel interdum ullamcorper. Vestibulum ut ipsum ac leo consectetur placerat. Proin venenatis dolor quis lacus venenatis, eu semper diam venenatis. Vestibulum eget vehicula ante. In malesuada commodo dolor, in mollis metus congue sit amet. Cras sit amet placerat nisi. Phasellus pulvinar massa vitae blandit feugiat.</string>
 </resources>
