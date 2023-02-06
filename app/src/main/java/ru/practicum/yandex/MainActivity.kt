@@ -9,6 +9,7 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
     companion object {
         const val TAG = "SPRINT_8"
+        const val KEY_TIMER_VALUE = "KEY_TIMER_VALUE"
     }
 
     private var timerTv: TextView? = null
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         Log.d(TAG, "$this onCreate")
         setContentView(R.layout.activity_main)
         timerTv = findViewById(R.id.timer)
+        timerValue = savedInstanceState?.getInt(KEY_TIMER_VALUE) ?: 0
     }
 
     override fun onStart() {
@@ -45,6 +47,11 @@ class MainActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         Log.d(TAG, "$this onPause")
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putInt(KEY_TIMER_VALUE, timerValue)
     }
 
     override fun onStop() {
